@@ -1,0 +1,8 @@
+0
+1
+2
+3
+bus
+car
+motor
+truck
