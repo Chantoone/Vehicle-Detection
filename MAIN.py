@@ -120,10 +120,10 @@ def display_traffic_info(frame):
 
 # ------------------------ Khởi động hệ thống ------------------------
 cap = cv2.VideoCapture('Bellevue_116th_NE12th__2017-09-11_07-08-32.mp4')
-model = YOLO('best.pt')
+model = YOLO('yolov8n.pt')
 cv2.namedWindow("frame")
 cv2.setMouseCallback("frame", mouseClick)
-classnames = open('class.txt').read().splitlines()
+classnames = open('classes.txt').read().splitlines()
 tracker = Sort(max_age=20)
 
 # ------------------------ Vòng lặp chính ------------------------
